@@ -105,5 +105,3 @@ int print_address(va_list l, flags_t *f);
 int print_percent(va_list l, flags_t *f);
 
 #endif
-
->>>>>>> c975932638620c8226c147b5720f0b025a878972
