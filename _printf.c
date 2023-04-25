@@ -3,7 +3,6 @@
 /**
  * _printf - printf
  * @format: input
- *
  * Return: integer
  */
 
@@ -48,7 +47,7 @@ int _printf(const char *format, ...)
 /**
  * print_buffer - print the content of the buffer if it exist
  * @buffer: array of char
- * @buff_ind: index at which to add next char, represents the length
+ * @buff_ind: index at wich to add next char, represents the lenght
  */
 
 void print_buffer(char buffer[], int *buff_ind)
@@ -57,3 +56,4 @@ void print_buffer(char buffer[], int *buff_ind)
 		write(1, &buffer[0], *buff_ind);
 	*buff_ind = 0;
 }
+
