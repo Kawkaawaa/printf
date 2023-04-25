@@ -9,7 +9,7 @@
  * @size: input
  * Return: num of char printed
  */
-int print_pointer(va_list types, cahr buffer[], int flags, int width,
+int print_pointer(va_list types, char buffer[], int flags, int width,
 		int precision, int size)
 {
 	char extra_c = 0, padd = ' ';
@@ -30,16 +30,16 @@ int print_pointer(va_list types, cahr buffer[], int flags, int width,
 	{
 		buffer[ind--] = map_to[num_addrs % 16];
 		num_addrs /= 16;
-		lenght++;
+		length++;
 	}
 	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		padd = '0';
 	if (flags & F_PLUS)
-		extra_c = '+', lenght++;
+		extra_c = '+', length++;
 	else if (flags & F_SPACE)
-		extra_c = ' ', lenght++;
+		extra_c = ' ', length++;
 	ind++;
-	return (write_pointer(buffer, ind, lenght, width, flags, padd, extra_c
+	return (write_pointer(buffer, ind, length, width, flags, padd, extra_c
 				, padd_start));
 }
 /**
