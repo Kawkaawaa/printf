@@ -1,4 +1,3 @@
-.TH _PRINTF 3 "April 19 2022 18:50" "0.1" "ALX-HOLBERTON 0x11. C - _printf"
 
 .SH NAME
 .B _printf\fR \- formatted output conversion
